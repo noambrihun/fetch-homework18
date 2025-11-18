@@ -1,0 +1,25 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+    <title>Simple Form</title>
+</head>
+<body>
+    <form onsubmit="sendData(event)" method="post" >
+            <label for="firstName">First name</label><br />
+            <input type="text" id="firstName" name="firstName" /><br>
+            <label for="lastName">Last name</label><br />
+            <input type="text" id="lastName" name="lastName"  /><br>
+            <button  type="submit">Send</button>
+            
+            <div id="result"></div>
+
+<button onclick="getHistory()">Show Calls History</button>
+<div id="history"></div>
+
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
